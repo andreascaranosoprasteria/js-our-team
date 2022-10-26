@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="container"></div>
+    <script>
+        const teamObj =
+            [
+                {
+                    'name': 'Angela Lopez',
+                    'role': 'Social Media Manager',
+                    'image': 'angela-lopez-social-media-manager.jpg'
+                },
+                {
+                    'name': 'Angela Caroll',
+                    'role': 'Chief Editor',
+                    'image': 'angela-caroll-chief-editor.jpg'
+                },
+                {
+                    'name': 'Wayne Barnett',
+                    'role': 'Founder & CEO',
+                    'image': 'wayne-barnett-founder-ceo.jpg'
+                },
+                {
+                    'name': 'Walter Gordon',
+                    'role': 'Office Manager',
+                    'image': 'walter-gordon-office-manager.jpg'
+                },
+                {
+                    'name': 'Barbara Ramos',
+                    'role': 'Graphic Designer',
+                    'image': 'barbara-ramos-graphic-designer.jpg'
+                },
+                {
+                    'name': 'Scott Estrada',
+                    'role': 'Developer',
+                    'image': 'scott-estrada-developer.jpg'
+                }
+
+            ];
+
+        console.log(teamObj)
+
+        var str = '';
+        for (let i in teamObj) {
+            str += "<p>" + teamObj[i].name + " - role: " + teamObj[i].role + "</p> <img src= './img/" + teamObj[i].image + "'><br><hr>";
+        }
+
+        document.getElementById("container").innerHTML = str;
+    </script>
+</body>
+
+</html>
